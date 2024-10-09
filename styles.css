@@ -5,3 +5,7 @@ th {
 td {
   text-align: center;
 }
+
+td.left {
+  text-align: left;
+}
