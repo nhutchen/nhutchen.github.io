@@ -1,10 +1,22 @@
-function filterData() {
+function filterData(event) {
   event.preventDefault();
-  var startdate = document.getElementById("startdate").value;
-  var enddate = document.getElementById("enddate").value;
-  console.log(startdate);
-  console.log(enddate);
+  
+  const startdate = new Date(document.getElementById("startdate").value);
+  const enddate = new Date(document.getElementById("enddate").value);
+  const tableRows = document.querySelectorAll('#pitchTable tbody tr');
+
+  tableRows.forEach(row => {
+      const dateCell = row.cells[1].innerText; // Assuming the second cell contains the date
+      const rowDate = new Date(dateCell);
+
+      if (rowDate >= startdate && rowDate <= enddate) {
+          row.style.display = ''; // Show the row
+      } else {
+          row.style.display = 'none'; // Hide the row
+      }
+  });
 }
+
 
 async function fetchPitchData() {
   try {
