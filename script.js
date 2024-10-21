@@ -32,7 +32,7 @@ function populateTable(data) {
           <td>${pitch.Outs}</td>
           <td>${pitch.PitchCall}</td>
           <td>${pitch.KorBB || ''}</td>
-          <td>${pitch.ReleaseSpeed || ''}</td>
+          <td>${pitch.RelSpeed || ''}</td>
           <td>${pitch.SpinRate || ''}</td>
           <td>${pitch.SpinAxis || ''}</td>
       `;
