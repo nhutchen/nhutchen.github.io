@@ -13,67 +13,27 @@
       <input type="date" id="enddate" />
       <button>Filter</button>
     </form>
-    <table class="blue">
-      <tr>
-        <th>PitchNo</th>
-        <th>Date</th>
-        <th>Time</th>
-        <th>Batter</th>
-        <th>Balls</th>
-        <th>Strikes</th>
-        <th>Outs</th>
-        <th>PitchCall</th>
-        <th>KorBB</th>
-        <th>ReleaseSpeed</th>
-        <th>SpinRate</th>
-        <th>SpinAxis</th>
-      </tr>
-      <tr>
-        <td><a href="details.html?id=12345">Pitch 12345</a></td>
-        <td>2024-10-09</td>
-        <td>16:00:00</td>
-        <td>John Smith</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>K</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a href="details.html">Pitch 12346</a></td>
-        <td>2024-10-09</td>
-        <td>16:00:45</td>
-        <td>John Smith</td>
-        <td>0</td>
-        <td>1</td>
-        <td>0</td>
-        <td>K</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a href="details.html">Pitch 12347</a></td>
-        <td>2024-10-09</td>
-        <td>16:00:00</td>
-        <td>John Smith</td>
-        <td>0</td>
-        <td>2</td>
-        <td>0</td>
-        <td>K</td>
-        <td>K</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
+    <table class="blue" id="pitchTable">
+      <thead>
+          <tr>
+              <th>PitchNo</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Batter</th>
+              <th>Balls</th>
+              <th>Strikes</th>
+              <th>Outs</th>
+              <th>PitchCall</th>
+              <th>KorBB</th>
+              <th>ReleaseSpeed</th>
+              <th>SpinRate</th>
+              <th>SpinAxis</th>
+          </tr>
+      </thead>
+      <tbody>
+          <!-- Data will be populated here -->
+      </tbody>
+  </table>
     <script src="script.js"></script>
   </body>
 </html>
