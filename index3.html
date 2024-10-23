@@ -156,7 +156,7 @@
             const strikes = data.map(p => p.Strikes).filter(x => !isNaN(x));
             const outs = data.map(p => p.Outs).filter(x => !isNaN(x));
             const korBB = data.map(p => p.KorBB).filter(x => !isNaN(x));
-            const releaseSpeed = data.map(p => p.ReleaseSpeed).filter(x => !isNaN(x));
+            const releaseSpeed = data.map(p => p.RelSpeed).filter(x => !isNaN(x));
             const spinRate = data.map(p => p.SpinRate).filter(x => !isNaN(x));
             const spinAxis = data.map(p => p.SpinAxis).filter(x => !isNaN(x));
 
@@ -164,7 +164,7 @@
             document.getElementById("meanStrikes").innerText = mean(strikes).toFixed(2);
             document.getElementById("meanOuts").innerText = mean(outs).toFixed(2);
             document.getElementById("meanKorBB").innerText = mean(korBB).toFixed(2);
-            document.getElementById("meanReleaseSpeed").innerText = mean(RelSpeed).toFixed(2);
+            document.getElementById("meanReleaseSpeed").innerText = mean(releaseSpeed).toFixed(2);
             document.getElementById("meanSpinRate").innerText = mean(SpinRate).toFixed(2);
             document.getElementById("meanSpinAxis").innerText = mean(SpinAxis).toFixed(2);
         }
